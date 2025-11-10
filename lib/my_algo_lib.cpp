@@ -1,40 +1,12 @@
 #include "my_algo_lib.h"
 
-
 /*
-arr - Sorted array; numb - number we finding
+arr - Sorted array; numb - number to find
 
 x - size of array
-log2 X = 2 ** X | log2 8 = 2 ** 3
+log2 X = 2 ** X | log2 8 = 2 ** 3 - how many iterations should be
 pow (2, X)
-
-return position of number in array */
-// int Algorithm::Binary_search(std::vector<int> *arr, int numb) const
-// {
-//   if (!arr || !numb)
-//     return 1;
-//   std::vector<int> v = *arr;
-//   int size = arr->size();
-//   int midIndex = size / 2;
-//   int midNumber = (*arr)[midIndex];
-//   while (midNumber != numb)
-//   {
-//     if (midNumber > numb)
-//     {
-//       v.erase(v.begin() + midIndex, v.end());
-//     }
-//     else if (midNumber < numb)
-//     {
-//       v.erase(v.begin(), v.begin() + midIndex);
-//     }
-//     size = v.size();
-//     midIndex = size / 2;
-//     midNumber = v[midIndex];
-//     if (v.size() == 1) break;
-//   }
-//   if (v[0] != numb && midNumber != numb) return -1;
-//   return v[0];
-// }
+*/
 int Algorithm::Binary_search(std::vector<int> *arr, int numb) const
 {
   if (!arr || !numb)
